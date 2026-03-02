@@ -168,7 +168,7 @@ async def worker(session):
 
 async def progress_report():
     while True:
-        print(f"STATUS: ve frontě {queue.qsize()} | uložených filmů {saved_count} | velikost {file_size()/1024/1024:.2f} MB")
+        print(f"STATUS: ve frontě {queue.qsize()}, filmy {saved_count}")
         await asyncio.sleep(30)
 
 
